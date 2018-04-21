@@ -34,8 +34,9 @@ import com.nelioalves.cursomc.repositories.ProdutoRepository;
 @SpringBootApplication
 public class CursomcApplication implements CommandLineRunner {
 
-	@Autowired
+	@Autowired 
 	private CategoriaRepository categoriaRepository;
+	
 	@Autowired
 	private ProdutoRepository produtoRepository;
 	@Autowired
