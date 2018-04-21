@@ -1,6 +1,9 @@
 package com.nelioalves.cursomc;
 
+<<<<<<< HEAD
 import java.text.SimpleDateFormat;
+=======
+>>>>>>> 04fcbc0d3e8104fcd90e14d5cb19da145a7b8c3e
 import java.util.Arrays;
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -9,6 +12,7 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 import com.nelioalves.cursomc.domain.Categoria;
+<<<<<<< HEAD
 import com.nelioalves.cursomc.domain.Cidade;
 import com.nelioalves.cursomc.domain.Cliente;
 import com.nelioalves.cursomc.domain.Endereco;
@@ -29,16 +33,25 @@ import com.nelioalves.cursomc.repositories.EstadoRepository;
 import com.nelioalves.cursomc.repositories.ItemPedidoRepository;
 import com.nelioalves.cursomc.repositories.PagamentoRepository;
 import com.nelioalves.cursomc.repositories.PedidoRepository;
+=======
+import com.nelioalves.cursomc.domain.Produto;
+import com.nelioalves.cursomc.repositories.CategoriaRepository;
+>>>>>>> 04fcbc0d3e8104fcd90e14d5cb19da145a7b8c3e
 import com.nelioalves.cursomc.repositories.ProdutoRepository;
 
 @SpringBootApplication
 public class CursomcApplication implements CommandLineRunner {
 
+<<<<<<< HEAD
 	@Autowired 
+=======
+	@Autowired
+>>>>>>> 04fcbc0d3e8104fcd90e14d5cb19da145a7b8c3e
 	private CategoriaRepository categoriaRepository;
 	
 	@Autowired
 	private ProdutoRepository produtoRepository;
+<<<<<<< HEAD
 	@Autowired
 	private EstadoRepository estadoRepository;
 	@Autowired
@@ -53,6 +66,8 @@ public class CursomcApplication implements CommandLineRunner {
 	private PagamentoRepository pagamentoRepository;
 	@Autowired
 	private ItemPedidoRepository itemPedidoRepository;
+=======
+>>>>>>> 04fcbc0d3e8104fcd90e14d5cb19da145a7b8c3e
 	
 	public static void main(String[] args) {
 		SpringApplication.run(CursomcApplication.class, args);
@@ -74,6 +89,7 @@ public class CursomcApplication implements CommandLineRunner {
 		p1.getCategorias().addAll(Arrays.asList(cat1));
 		p2.getCategorias().addAll(Arrays.asList(cat1, cat2));
 		p3.getCategorias().addAll(Arrays.asList(cat1));
+<<<<<<< HEAD
 				
 		categoriaRepository.save(Arrays.asList(cat1, cat2));
 		produtoRepository.save(Arrays.asList(p1, p2, p3));
@@ -133,4 +149,10 @@ public class CursomcApplication implements CommandLineRunner {
 		itemPedidoRepository.save(Arrays.asList(ip1, ip2, ip3));		
 	}
 	
+=======
+		
+		categoriaRepository.save(Arrays.asList(cat1, cat2));
+		produtoRepository.save(Arrays.asList(p1, p2, p3));
+	}
+>>>>>>> 04fcbc0d3e8104fcd90e14d5cb19da145a7b8c3e
 }

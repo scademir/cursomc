@@ -2,9 +2,13 @@ package com.nelioalves.cursomc.domain;
 
 import java.io.Serializable;
 import java.util.ArrayList;
+<<<<<<< HEAD
 import java.util.HashSet;
 import java.util.List;
 import java.util.Set;
+=======
+import java.util.List;
+>>>>>>> 04fcbc0d3e8104fcd90e14d5cb19da145a7b8c3e
 
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
@@ -13,12 +17,18 @@ import javax.persistence.Id;
 import javax.persistence.JoinColumn;
 import javax.persistence.JoinTable;
 import javax.persistence.ManyToMany;
+<<<<<<< HEAD
 import javax.persistence.OneToMany;
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
 
 @Entity
 public class Produto  implements Serializable {
+=======
+
+@Entity
+public class Produto implements Serializable{
+>>>>>>> 04fcbc0d3e8104fcd90e14d5cb19da145a7b8c3e
 	private static final long serialVersionUID = 1L;
 	
 	@Id
@@ -27,17 +37,27 @@ public class Produto  implements Serializable {
 	private String nome;
 	private Double preco;
 	
+<<<<<<< HEAD
 	@JsonIgnore
+=======
+	
+>>>>>>> 04fcbc0d3e8104fcd90e14d5cb19da145a7b8c3e
 	@ManyToMany
 	@JoinTable(name = "PRODUTO_CATEGORIA",
 		joinColumns = @JoinColumn(name = "produto_id"),
 		inverseJoinColumns = @JoinColumn(name = "categoria_id")
+<<<<<<< HEAD
 	)
 	private List<Categoria> categorias = new ArrayList<>();
 	
 	@JsonIgnore
 	@OneToMany(mappedBy="id.produto")
 	private Set<ItemPedido> itens = new HashSet<>();
+=======
+			)
+	
+	private List<Categoria> categorias = new ArrayList<>();
+>>>>>>> 04fcbc0d3e8104fcd90e14d5cb19da145a7b8c3e
 	
 	public Produto() {
 	}
@@ -49,6 +69,7 @@ public class Produto  implements Serializable {
 		this.preco = preco;
 	}
 
+<<<<<<< HEAD
 	@JsonIgnore
 	public List<Pedido> getPedidos() {
 		List<Pedido> lista = new ArrayList<>();
@@ -59,6 +80,8 @@ public class Produto  implements Serializable {
 	}
 	
 	
+=======
+>>>>>>> 04fcbc0d3e8104fcd90e14d5cb19da145a7b8c3e
 	public Integer getId() {
 		return id;
 	}
@@ -91,6 +114,7 @@ public class Produto  implements Serializable {
 		this.categorias = categorias;
 	}
 
+<<<<<<< HEAD
 	public Set<ItemPedido> getItens() {
 		return itens;
 	}
@@ -99,6 +123,8 @@ public class Produto  implements Serializable {
 		this.itens = itens;
 	}
 	
+=======
+>>>>>>> 04fcbc0d3e8104fcd90e14d5cb19da145a7b8c3e
 	@Override
 	public int hashCode() {
 		final int prime = 31;
@@ -124,5 +150,9 @@ public class Produto  implements Serializable {
 		return true;
 	}
 	
+<<<<<<< HEAD
+=======
+	
+>>>>>>> 04fcbc0d3e8104fcd90e14d5cb19da145a7b8c3e
 
 }

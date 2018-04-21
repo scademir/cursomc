@@ -8,6 +8,10 @@ target/
 .project
 .settings
 .springBeans
+<<<<<<< HEAD
+=======
+.sts4-cache
+>>>>>>> 04fcbc0d3e8104fcd90e14d5cb19da145a7b8c3e
 
 ### IntelliJ IDEA ###
 .idea

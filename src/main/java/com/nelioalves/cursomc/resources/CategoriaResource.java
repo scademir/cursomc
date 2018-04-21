@@ -13,13 +13,21 @@ import com.nelioalves.cursomc.services.CategoriaService;
 @RestController
 @RequestMapping(value="/categorias")
 public class CategoriaResource {
+<<<<<<< HEAD
 	
+=======
+
+>>>>>>> 04fcbc0d3e8104fcd90e14d5cb19da145a7b8c3e
 	@Autowired
 	private CategoriaService service;
 	
 	@RequestMapping(value="/{id}", method=RequestMethod.GET)
 	public ResponseEntity<?> find(@PathVariable Integer id) {
 		Categoria obj = service.buscar(id);
+<<<<<<< HEAD
+=======
+		
+>>>>>>> 04fcbc0d3e8104fcd90e14d5cb19da145a7b8c3e
 		return ResponseEntity.ok().body(obj);
 	}
 }
